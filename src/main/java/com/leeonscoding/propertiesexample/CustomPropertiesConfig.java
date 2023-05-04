@@ -11,7 +11,8 @@ import org.springframework.context.annotation.PropertySources;
 //@PropertySource("classpath:custom-property2.properties")
 @PropertySources({
         @PropertySource("classpath:custom-property1.properties"),
-        @PropertySource("classpath:custom-property2.properties")
+        @PropertySource("classpath:custom-property2.properties"),
+        @PropertySource("classpath:hierarchical-example1.properties")
 })
 @ComponentScan(basePackages = "com.leeonscoding.propertiesexample")
 public class CustomPropertiesConfig {
