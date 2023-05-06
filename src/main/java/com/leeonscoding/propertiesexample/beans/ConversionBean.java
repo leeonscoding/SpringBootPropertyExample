@@ -1,4 +1,4 @@
-package com.leeonscoding.propertiesexample;
+package com.leeonscoding.propertiesexample.beans;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.convert.DataSizeUnit;

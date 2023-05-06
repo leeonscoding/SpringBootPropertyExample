@@ -1,4 +1,4 @@
-package com.leeonscoding.propertiesexample;
+package com.leeonscoding.propertiesexample.beans;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
@@ -7,27 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
-
-class MongoDB {
-    private String host;
-    private String port;
-
-    public String getHost() {
-        return host;
-    }
-
-    public void setHost(String host) {
-        this.host = host;
-    }
-
-    public String getPort() {
-        return port;
-    }
-
-    public void setPort(String port) {
-        this.port = port;
-    }
-}
 
 @Configuration
 @Component
@@ -63,6 +42,27 @@ public class Data {
 
     public void setTest(List<String> test) {
         this.test = test;
+    }
+
+    public static class MongoDB {
+        private String host;
+        private String port;
+
+        public String getHost() {
+            return host;
+        }
+
+        public void setHost(String host) {
+            this.host = host;
+        }
+
+        public String getPort() {
+            return port;
+        }
+
+        public void setPort(String port) {
+            this.port = port;
+        }
     }
 
 }

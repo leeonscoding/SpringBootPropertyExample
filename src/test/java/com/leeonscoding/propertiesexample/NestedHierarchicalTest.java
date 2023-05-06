@@ -1,5 +1,6 @@
 package com.leeonscoding.propertiesexample;
 
+import com.leeonscoding.propertiesexample.beans.Data;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,7 +34,7 @@ public class NestedHierarchicalTest {
 
     @Test
     public void objectValidation() {
-        MongoDB m = new MongoDB();
+        Data.MongoDB m = new Data.MongoDB();
         m.setHost("fake mongo host");
         m.setPort("fake mongo port");
 

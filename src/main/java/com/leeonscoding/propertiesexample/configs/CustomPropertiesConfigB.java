@@ -1,4 +1,4 @@
-package com.leeonscoding.propertiesexample;
+package com.leeonscoding.propertiesexample.configs;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
